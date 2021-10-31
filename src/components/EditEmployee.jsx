@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 import axios from "axios";
 import { useParams } from "react-router";
 
-const UpdateEmployee = (props) => {
+const EditEmployee = (props) => {
     const { id } = useParams();
     const [data, setData] = useState({
         first_name: '',
@@ -36,29 +36,29 @@ const UpdateEmployee = (props) => {
 
     return (
         <div>
-            <Container style={{border:"2px solid black",backgroundColor:"lightyellow"}}>
+            <Container style={{border:"2px solid black",backgroundColor:"lightpink"}}>
                 <Form onSubmit={handleSubmit} className= 'mt-4'>
-                <h3 style={{backgroundColor:"lightslategray",color:"maroon",padding:"10px"}}>Update Employee</h3>
+                <h3 style={{backgroundColor:"lightgreen",color:"black",padding:"10px"}}>Edit Employee</h3>
                     <Form.Group className="mb-3" controlId="formBasicText">
-                        <Form.Label  style={{color:"navy",fontWeight:"700",fontSize:"20px"}}>First Name</Form.Label>
+                        <Form.Label  style={{color:"black",fontWeight:"700",fontSize:"20px"}}>First Name</Form.Label>
                         <Form.Control type="text" placeholder="Enter FirstName" name= "first_name" value= {first_name} onChange= {handleChange} />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicText">
-                        <Form.Label style={{color:"navy",fontWeight:"700",fontSize:"20px"}}>Last Name</Form.Label>
+                        <Form.Label style={{color:"black",fontWeight:"700",fontSize:"20px"}}>Last Name</Form.Label>
                         <Form.Control type="text" placeholder="Enter LastName" name= "last_name" value= {last_name} onChange= {handleChange} />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicText">
-                        <Form.Label style={{color:"navy",fontWeight:"700",fontSize:"20px"}}>Email</Form.Label>
+                        <Form.Label style={{color:"black",fontWeight:"700",fontSize:"20px"}}>Email</Form.Label>
                         <Form.Control type="email" placeholder="Enter Email" name= "email" value= {email} onChange= {handleChange} />
                     </Form.Group>
 
-                    <Button style={{margin:"10px",padding:"15px"}} variant="warning" type="submit">Update</Button>
+                    <Button style={{margin:"10px",padding:"15px"}} variant="btn btn-primary" type="submit">Edit</Button>
                 </Form>
             </Container>
         </div>
     );
 }
 
-export default UpdateEmployee;
+export default EditEmployee;

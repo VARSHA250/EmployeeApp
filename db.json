@@ -1,50 +1,28 @@
 {
   "users": [
     {
-      "id": 2,
-      "email": "janet.weaver@reqres.in",
-      "first_name": "Janet",
-      "last_name": "Weaver",
-      "avatar": "https://reqres.in/img/faces/2-image.jpg"
-    },
-    {
-      "id": 3,
-      "email": "emma.wong@reqres.in",
-      "first_name": "Emma",
-      "last_name": "Wong",
-      "avatar": "https://reqres.in/img/faces/3-image.jpg"
-    },
-    {
-      "id": 4,
-      "email": "eve.holt@reqres.in",
-      "first_name": "Eve",
-      "last_name": "Holt",
-      "avatar": "https://reqres.in/img/faces/4-image.jpg"
-    },
-    {
-      "id": 5,
-      "email": "charles.morris@reqres.in",
-      "first_name": "Charles",
-      "last_name": "Morris",
-      "avatar": "https://reqres.in/img/faces/5-image.jpg"
-    },
-    {
-      "first_name": "New",
-      "last_name": "Peter",
-      "email": "new@gmail.com",
-      "id": 7
-    },
-    {
       "first_name": "Jack Peter",
       "last_name": "Peter",
       "email": "testing@gmail.com",
       "id": 8
     },
     {
-      "first_name": "Prathmesh",
-      "last_name": "Daphale",
-      "email": "daphalep1997@gmail.com",
-      "id": 9
+      "first_name": "shaila",
+      "last_name": "shete",
+      "email": "shailashete@gmail.com",
+      "id": 11
+    },
+    {
+      "first_name": "john",
+      "last_name": "karlee",
+      "email": "johnkarlee234@gmail.com",
+      "id": 12
+    },
+    {
+      "first_name": "varsha",
+      "last_name": "todkar",
+      "email": "krishnaradha25061204@gmail.com",
+      "id": 13
     }
   ]
 }

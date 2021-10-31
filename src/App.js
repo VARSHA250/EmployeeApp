@@ -1,8 +1,7 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import CreateEmployee from "./components/CreateEmployee";
-import EmployeeDetails from "./components/EmployeeDetails";
+import CreateEmployee from "./components/AddEmployee";
 import Home from "./components/Home";
-import UpdateEmployee from "./components/UpdateEmployee";
+import EditEmployee from "./components/EditEmployee";
 import Navbar from "./components/Navbar"
 
 function App() {
@@ -13,8 +12,7 @@ function App() {
         <Switch>
           <Route exact path= "/" component= {Home} />
           <Route path= "/create" component= {CreateEmployee} />
-          <Route path= "/update/:id" component= {UpdateEmployee} />
-          <Route path= "/details/:id" component= {EmployeeDetails} />
+          <Route path= "/update/:id" component= {EditEmployee} />
         </Switch>
       </BrowserRouter>
     </div>

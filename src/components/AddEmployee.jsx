@@ -29,21 +29,21 @@ const CreateEmployee = (props) => {
 
     return (
         <div>
-            <Container style={{border:"2px solid black",backgroundColor:"burlywood"}}>
+            <Container style={{border:"2px solid black",backgroundColor:"lightpink"}}>
                 <Form onSubmit={handleSubmit} className= 'mt-1'>
-                <h3 style={{backgroundColor:"lightslategray",color:"maroon",padding:"10px"}}>Add Employee</h3>
+                <h3 style={{backgroundColor:"lightgreen",color:"black",padding:"10px"}}>Add Employee</h3>
                     <Form.Group className="mb-3" controlId="formBasicText">
-                        <Form.Label style={{color:"purple",fontWeight:"700",fontSize:"20px"}}>First Name</Form.Label>
+                        <Form.Label style={{color:"black",fontWeight:"700",fontSize:"20px"}}>First Name</Form.Label>
                         <Form.Control type="text" placeholder="Enter FirstName" name= "first_name" value= {first_name} onChange= {handleChange} />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicText">
-                        <Form.Label  style={{color:"purple",fontWeight:"700",fontSize:"20px"}}>Last Name</Form.Label>
+                        <Form.Label  style={{color:"black",fontWeight:"700",fontSize:"20px"}}>Last Name</Form.Label>
                         <Form.Control type="text" placeholder="Enter LastName" name= "last_name" value= {last_name} onChange= {handleChange} />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicText">
-                        <Form.Label  style={{color:"purple",fontWeight:"700",fontSize:"20px"}}>Email</Form.Label>
+                        <Form.Label  style={{color:"black",fontWeight:"700",fontSize:"20px"}}>Email</Form.Label>
                         <Form.Control type="email" placeholder="Enter Email" name= "email" value= {email} onChange= {handleChange} />
                     </Form.Group>
 

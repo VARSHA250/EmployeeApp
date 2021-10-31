@@ -5,9 +5,9 @@ function Navbars() {
     return (
         <div>
             <Container>
-                <Navbar expand="lg" style={{backgroundColor:"lightskyblue",textAlign:"center"}}>
+                <Navbar expand="lg" style={{backgroundColor:"black",textAlign:"center"}}>
                     <Container>
-                        <Navbar.Brand style={{color:"darkolivegreen",fontWeight:"600",fontSize:"30px"}} >Company</Navbar.Brand>
+                        <Navbar.Brand style={{color:"white",ontWeight:"600",fontSize:"30px", padding:"20px",marginLeft: '500px'}} >Employee Details</Navbar.Brand>
                     </Container>
                 </Navbar>
             </Container>

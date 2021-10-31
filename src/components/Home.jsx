@@ -21,35 +21,22 @@ function Home() {
         loadUsers();
     }
 
-    const handleDeleteAll = (index) => {
-        setUserData(userData.filter(item => {
-            return item.index != index;
-        }));
-    }
-
     return (
         <Container>
-            <h1 className="mt-3" style={{backgroundColor:"lightsalmon",paddingLeft:"10px",paddingTop:"10px",paddingBottom:"10px",textAlign:"center"}}>Employee List</h1>
-            <Form className="mt-3" style={{backgroundColor:"lightgreen",padding:"5px",alignContent:"center"}} >
+            <Form className="mt-3" style={{backgroundColor:"white",padding:"25px",alignContent:"center"}} >
                 <Row >
-                    <Col xs={5} style= {{marginLeft: '50px'}} >
+                    <Col xs={5} style= {{marginLeft: '270px'}} >
                         <Form.Control value= {search} onChange={(e) => setSearch(e.target.value)}placeholder="Search" />
                     </Col>
                     <Col>
-                        <Link to= "/create"><Button variant="info">Create Employee</Button></Link>
+                        <Link to= "/create"><Button variant="info">Add Employee</Button></Link>
                     </Col>                           
-                    <Col xs={5} style= {{marginLeft: '10px'}}>
-                        <Button onClick= {() => { 
-                            if(window.confirm('Are you sure you want to delete all?')) { 
-                                handleDeleteAll();
-                            }
-                        }} variant="outline-danger">Delete All</Button>
-                    </Col>
+                    
                 </Row>
             </Form>
-            <Table style={{textAlign:"center",border:"2px double gold"}} striped bordered hover className="mt-3">
+            <Table style={{textAlign:"center"}} striped bordered hover className="mt-3">
                 <thead>
-                    <tr style={{backgroundColor:"lightcoral"}}>
+                    <tr style={{backgroundColor:"lightgreen"}}>
                         <th>Id</th>
                         <th>First Name</th>
                         <th>Last Name</th>
@@ -73,11 +60,9 @@ function Home() {
                                 <td>
                                     <Button style= {{margin: '10px'}} variant="danger" onClick= {() => handleDelete(item.id)}>Delete</Button>
                                     <Link to= {`/update/${item.id}`}>
-                                        <Button style= {{margin: '10px'}} variant="outline-primary">Update</Button>
+                                        <Button style= {{margin: '10px'}} variant="btn btn-primary">Edit</Button>
                                     </Link>
-                                    <Link to= {`/details/${item.id}`}>
-                                        <Button style= {{margin: '10px'}} variant="secondary">Details</Button>
-                                    </Link>
+                                    
                                 </td>
                             </tr>
                         );
